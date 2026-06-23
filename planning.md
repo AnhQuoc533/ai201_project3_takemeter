@@ -14,8 +14,8 @@ This community is an excellent fit for a classification task because the discour
 
 * **Contextual ambiguity:** It's very hard to classify some comments without knowing community norms. A sarcastic comment might read like a mere curiosity to an outsider. A seemingly neutral recount of history might be interpreted as support depending on what's omitted. This ambiguity is *the* interesting part, where subjectivity lives.
 
-## Labels
-### with israel
+## Label Taxonomy
+### `with israel`
 **Description**: the post/comment expresses support for or alignment with Israel's position. The commenter presents arguments in favor of Israeli policies, actions, or existence, often with supporting context or counter-arguments to opposing views.
 
 **Example 1**:
@@ -28,7 +28,7 @@ The incident took place late on Thursday after the military allowed 31 aid truck
 Case in point: Yemen. During the North Yemen Civil War, the arab monarchies supported the Shia theocratic monarchy while Nasser's Egypt support the Republicans. Then you had the British being pushed out of South Yemen by the between the Communists, where the Arab monarchies now suported with the Republicans bcz the communists were a bigger threat to them.\
 Edit: confused one yemeni civil war with the other.
 
-### with palestine
+### `with palestine`
 **Description**: the post/comment expresses support for or alignment with Palestine's position. The commenter advocates for Palestinian rights, criticizes Israeli policies, or presents historical and political arguments favoring Palestinian interests.
 
 **Example 1**:
@@ -40,7 +40,7 @@ For another thing it will likely result in a surge in support for Netanyahu who 
 > To quote Netanyahu, 'A PM Up to His Neck in Investigations Has No Mandate' (said back when former Israeli PM Ehud Olmert was being investigated back in 2008 over corruption).\
 There's a lot to be said that his inaction over ministers that have said and *continue to say* terrible things was what the ICJ correctly focused on. But of course, to quote Netanyahu once again in the week after October 7th, "what will my government be in three months?" Turns out, three months later and it's still the same clowns.
 
-### neutral
+### `neutral`
 **Description**: the post/comment takes a balanced or non-committal stance on the Israel-Palestine conflict. The comment acknowledges both sides, expresses uncertainty, calls for nuance, or focuses on humanitarian concerns without strongly endorsing either side's political position.
 
 **Example 1**:
@@ -70,7 +70,7 @@ Peace is in the hands of messianic psychopaths
 
 ## Data collection plan
 * **Target platform:** Reddit ([r/worldnews](https://www.reddit.com/r/worldnews/))
-* **Volume:** 200 samples per label
+* **Distribution:** 200 samples per label
 * **Handling underrepresentation:**
   * Remove unuseful samples from overpopulated classes.
   * Use keyword sampling to pull more contents.

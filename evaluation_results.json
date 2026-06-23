@@ -1,0 +1,12 @@
+{
+  "baseline_accuracy": 0.8333,
+  "finetuned_accuracy": 0.6778,
+  "improvement": -0.1556,
+  "test_set_size": 90,
+  "label_map": {
+    "with israel": 0,
+    "with palestine": 1,
+    "neutral": 2
+  },
+  "model": "distilbert-base-uncased"
+}
