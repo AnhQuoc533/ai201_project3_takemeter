@@ -50,17 +50,6 @@ Peace is in the hands of messianic psychopaths
 **Example 2**:
 > Reminder: Your beef isn't with Israel or Palestine, it's with a small handful of officials in charge who have done the unforgivable for power at the cost of lives on both sides. Sarah the Jewish girl working at the Tel Aviv Gap Store and Ahmed the Shia Butcher are not the reason things suck in the middle east right now.
 
-### inquisitive
-**Description**: the post/comment poses genuine questions or seeks clarification about the conflict. The OP is asking for information, requesting explanation of positions, or exploring aspects of the topic without making strong claims or taking a clear stance.
-
-**Example 1**:
->So Israel is required to provide Gaza with electricity, water, and food? And Israel is somehow accountable for the Egypt-Palestine border?\
-I don't understand.
-
-**Example 2**:
-> Canada's parliament passed a non-binding motion late Monday that called for a halt to Israeli arms sales and urged the international community to work toward a two-state solution to resolve the conflict between Israel and the Palestinians, in line with government policy.\
-> Would a 2 state solution work? What do the people living there want?
-
 ## Hard edge cases
 ### Sarcasm contents
 * **The ambiguity:** Sarcasm inverts the surface meaning, making it hard to know which underlying position to label. Does "Oh sure, Israel is totally just defending itself" express with palestine (by mocking Israel's claim) or should I label the literal statement? And when sarcasm is nested ("If you believe that, I have a bridge to sell you"), which layer am I classifying?
@@ -108,7 +97,6 @@ Neutral/inquisitive ≥ 60% — Acknowledges these labels are harder to predict
   * *with israel:* ≥ 0.74 
   * *with palestine:* ≥ 0.74 
   * *neutral:* ≥ 0.64
-  * *inquisitive:* ≥ 0.45 (rare, lower bar acceptable)
 
 This dataset sits at the intersection of high emotion and genuine ambiguity. A classifier good enough to save time for online moderators and researchers, but not good enough to be weaponized against one perspective is the goal. The thresholds proposed are strict enough to demand real performance, yet lenient enough to accept the fuzziness of discourse analysis in a polarized space.
 
