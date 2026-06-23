@@ -97,13 +97,22 @@ I don't understand.
 | Confusion matrix | Easy to see exactly where the algorithm is making mistakes and reveal systematic bias
 
 ## Definition of success
-<!-- What performance would make this classifier genuinely useful? What would you accept as "good enough" for deployment in a real community tool? !-->
+For a classifier to be genuinely useful in a polarized space, technical performance alone is insufficient. Success means the model reliably identifies stance while minimizing false accusations of bias, which carry real reputational and emotional stakes in this community.
 
+Acceptance criteria:
+* **Accuracy ≥ 72%**: Above random chance (25%) and realistic for the ambiguity inherent in this topic
+* **Recall ≥ 65%**: Catches most comments without systematically silencing a viewpoint
+* **Precision ≥ 70%**: Minimizes false accusations of bias, which carry emotional weight in polarized spaces
+Neutral/inquisitive ≥ 60% — Acknowledges these labels are harder to predict
+* **Per-class F1:**
+  * *with israel:* ≥ 0.74 
+  * *with palestine:* ≥ 0.74 
+  * *neutral:* ≥ 0.64
+  * *inquisitive:* ≥ 0.45 (rare, lower bar acceptable)
+
+This dataset sits at the intersection of high emotion and genuine ambiguity. A classifier good enough to save time for online moderators and researchers, but not good enough to be weaponized against one perspective is the goal. The thresholds proposed are strict enough to demand real performance, yet lenient enough to accept the fuzziness of discourse analysis in a polarized space.
 
 ## AI Tool Plan
-<!-- Label stress-testing: Give the AI your label definitions and edge case description, and ask it to generate 5–10 posts that sit at the boundary between two labels. If it produces posts you can't classify cleanly, your definitions need tightening — do that now, before you annotate 200 examples.
-Annotation assistance: Decide whether you'll use an LLM to pre-label a batch of examples before reviewing them yourself. If yes, note which tool you'll use and how you'll track which examples were pre-labeled (for disclosure in your AI usage section).
-Failure analysis: Plan to give your list of wrong predictions to an AI tool and ask it to identify patterns before you write up your evaluation. Note what you'll look for and how you'll verify the patterns yourself. !-->
 ### Label stress-testing
 - AI tool: Claude
 - What I'll give it as input: Label definitions and edge case description
