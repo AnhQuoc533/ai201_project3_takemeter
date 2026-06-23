@@ -92,7 +92,6 @@ Acceptance criteria:
 * **Accuracy ≥ 72%**: Above random chance (25%) and realistic for the ambiguity inherent in this topic
 * **Recall ≥ 65%**: Catches most comments without systematically silencing a viewpoint
 * **Precision ≥ 70%**: Minimizes false accusations of bias, which carry emotional weight in polarized spaces
-Neutral/inquisitive ≥ 60% — Acknowledges these labels are harder to predict
 * **Per-class F1:**
   * *with israel:* ≥ 0.74 
   * *with palestine:* ≥ 0.74 
