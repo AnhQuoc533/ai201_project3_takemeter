@@ -102,13 +102,13 @@ This dataset sits at the intersection of high emotion and genuine ambiguity. A c
 ## AI Tool Plan
 ### Label stress-testing
 - AI tool: Claude
-- What I'll give it as input: Label definitions and edge case description
-- What I expect it to produce: 5 artifically made, unlabeled posts/comments that sit at the boundary between any pair of labels
+- What I'll give it as input: Label definitions, hard edge case description, and a request to generate 5 artificial Reddit comments that sit at the boundary between pairs of my labels.
+- What I expect it to produce: 5 Reddit posts/comments that are hard to label and include sarcastic or/and satirical tones.
 - How I'll verify: manually classify these AI-generated contents and ask the AI tool for correction and reasoning
 
 ### Annotation assistance
 - AI tool: Claude
-- What I'll give it as input: Label definitions, edge case description, and my dataset without labels
+- What I'll give it as input: Label definitions, hard edge case description, and my dataset without labels
 - What I expect it to produce: a csv file containing the original samples and their new labels
 - How I'll verify: compare its results with my pre-labeled samples stored in a seperate csv file
 
